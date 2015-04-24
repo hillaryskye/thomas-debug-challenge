@@ -98,13 +98,13 @@ a.page2 {
 }
 
 /* Chrome, Safari, Opera */
-@-webkit-keyframes moveSarge {
+@-ie-keyframes moveSarge {
 	from { -webkit-transform: translateX(1000px); }
 	to { -webkit-transform: translateX(000px); }
 }
 
 /* Standard syntax */
-@keyframes moveSarge {
+@-keyframes moveSarge {
 	from { transform: translateX(1000px); }
 	to { transform: translateX(000px); }
 }
