@@ -1,0 +1,172 @@
+html {
+	padding-top: 25px;
+	background-image: url( images/ bg_page.png);
+}
+
+body {
+	width: 80%;
+	padding: 20px;
+	margin: 0 auto;
+	box-shadow: 10px 10px 10px rgba( 0,0,0,. 5);
+	background-color: #E1EDEB;
+}
+
+p {
+	font-family: "Droid Serif", "Palatino Linotype", Baskerville, serif;
+	color: #616161;
+	line-height: 150%;
+	margin-top: 10px;
+	margin-left: 0px;
+	font-size: large;
+	text-indent: 1.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+p:first-child {
+	text-indent: 0em;
+}
+
+a.CFT {
+	color: #9f3d54;
+}
+
+a.page2 {
+	color: #000000;
+    text-decoration: none;
+}
+
+/* Red "Can't Click Me" button (animated)*/
+.cantClickMe {
+    width: 275px;
+    height: 50px;
+	background-color: #FF0000;
+	font-family: “Lucida Console”, Monaco, monospace;
+	font-size: large;
+	text-align: center;
+	line-height: 2.5;
+	position: relative;
+}
+.cantClickMe:hover {
+ 	-webkit-transform: translateX(500px);
+	-webkit-transition-duration: 1s;
+
+	-moz-transform: translateX(500px);
+	-moz-transition-duration: 1s;
+
+	-o-transform: translateX(500px);
+	-o-transition-duration: 1s;
+
+	-ms-transform: translateX(500px);
+	-ms-transition-duration: 1s;
+}
+
+/* Red "Click Me" button (no animation)*/
+.clickMe {
+    width: 275px;
+    height: 50px;
+	background-color: #FF0000;
+	font-family: “Lucida Console”, Monaco, monospace;
+	font-size: large;
+	text-align: center;
+	line-height: 2.5;
+	position: relative;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveBug {
+	from { -webkit-transform: translateY(-2400px); }
+	to { -webkit-transform: translateY(000px); }
+}
+
+/* Standard syntax */
+@keyframes moveBug {
+	from { transform: translateY(-2400px); }
+	to { transform: translateY(000px); }
+}
+
+.bug {
+	-webkit-animation-name: moveBug; /* Chrome, Safari, Opera */
+	-webkit-transition-delay: 2s;
+	-webkit-animation-duration: 2s;
+
+	animation-name: moveBug; /* Standard syntax */
+	transition-delay: 2s;
+	animation-duration: 2s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveSarge {
+	from { -webkit-transform: translateX(1000px); }
+	to { -webkit-transform: translateX(000px); }
+}
+
+/* Standard syntax */
+@keyframes moveSarge {
+	from { transform: translateX(1000px); }
+	to { transform: translateX(000px); }
+}
+
+
+.sarge {
+	-webkit-animation-name: moveSarge; /* Chrome, Safari, Opera */
+	-webkit-transition-delay: 5s;
+	-webkit-animation-duration: 2s;
+
+	animation-name: moveSarge; /* Standard syntax */
+	transition-delay: 5s;
+	animation-duration: 2s;
+}
+
+
+
+
+/*
+
+rotate(180deg)
+
+skew(45deg, 0)
+
+
+CSS animation works with <div> or <button> but not with <p> or <input>
+
+
+“Times New Roman”, Times, serif
+
+Georgia, “Times New Roman”, Times, serif
+
+Baskerville, “Palatino Linotype”, Times, serif
+
+“Hoefler Text”, Garamond, Times, serif
+
+
+
+Arial, Helvetica, sans-serif
+
+Verdana, Arial, Helvetica, sans-serif
+
+Geneva, Arial, Helvetica, sans-serif
+
+Tahoma, “Lucida Grande”, Arial, sans-serif
+
+“Trebuchet MS”, Arial, Helvetica, sans-serif
+
+“Century Gothic”, “Gill Sans”, Arial, sans-serif
+
+
+“Courier New”, Courier, monospace
+
+“Lucida Console”, Monaco, monospace
+
+“Copperplate Light”, “Copperplate Gothic Light”, serif
+
+“Marker Felt”, “Comic Sans MS”, fantasy
+
+http://www.google.com/fonts/
+
+"Droid Serif"
+
+
+*/
